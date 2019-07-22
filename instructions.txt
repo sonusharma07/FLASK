@@ -4,4 +4,7 @@ set FLASK_APP=app.py
 pip install flask
 #now from terminal at root folder of app.py
 flask run
- 
+#debugging mode
+set FLASK_ENV=development
+#then it will show error with http default code and msg
+flask run
