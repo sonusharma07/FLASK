@@ -1,0 +1,7 @@
+#on windows , auto run flask server
+set FLASK_APP=app.py
+#run fro terminal
+pip install flask
+#now from terminal at root folder of app.py
+flask run
+ 
