@@ -1,6 +1,27 @@
-<h1>{{ title }}</h1>
+<html>
+    <title>
+        {{ title }}
+    </title>
+    <header>
+    </header>
+    <nav>
+        <ul>
+            <li> <a href="#">Home</a> </li>
+            <li> <a href="#">News</a> </li>          
+            <li> <a href="#">About us</a> </li>       
+        </ul>
+    </nav>
+    <body>
+        <h1>{{ title }}</h1>
+        {% for items in programming_languages %}
+        <p>{{items}}</p>
+        {% endfor %}
+    </body>
+    <footer>
+        &copy; 2019 - You are in better hands
+    </footer>
+</html>
 
 
-{% for items in programming_languages %}
-<p>{{items}}</p>
-{% endfor %}
+
+
