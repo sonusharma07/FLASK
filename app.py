@@ -6,5 +6,10 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     title='Learn Flask'
-    return render_template('index.html' , title=title)
+    programming_languages = [
+        'python',
+        'JAVA',
+        'JavaScript'
+    ]
+    return render_template('index.html' , title=title, programming_languages=programming_languages)
 
