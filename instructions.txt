@@ -8,3 +8,6 @@ flask run
 set FLASK_ENV=development
 #then it will show error with http default code and msg
 flask run
+#added typescript cmd to compile on any changes
+ tsc .\main.ts --outFile ..\satic\js --watch
+

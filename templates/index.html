@@ -3,6 +3,7 @@
         {{ title }}
     </title>
     <link rel="stylesheet" href="static/css/main.css">
+    <body>
     <header>
     </header>
     <nav>
@@ -12,15 +13,18 @@
             <li> <a href="#">About us</a> </li>       
         </ul>
     </nav>
-    <body>
+    
         <h1>{{ title }}</h1>
+        <img src="static/img/palm.jpg" />
         {% for items in programming_languages %}
         <p>{{items}}</p>
         {% endfor %}
+        <footer>
+                &copy; 2019 - You are in better hands
+        </footer>
+        <script src="static/js/main.js"></script>
     </body>
-    <footer>
-        &copy; 2019 - You are in better hands
-    </footer>
+    
 </html>
 
 
