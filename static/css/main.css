@@ -1,8 +1,46 @@
-ul li {
-    list-style-type: none;
-    display: inline-block;
-    margin-right: 2rem;
-}
 h1 {
-    color: aquamarine;
+  color: red;
 }
+
+header {
+  min-height: 3rem;
+  background-color: #000000;
+  margin-bottom: 2rem;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+footer {
+  background-color: #000000;
+  min-height: 3rem;
+  margin-top: 2rem;
+  color: #fff;
+  position: relative;
+}
+footer span {
+  position: absolute;
+  bottom: 0.5rem;
+  width: 100%;
+  text-align: center;
+}
+footer ul {
+  text-align: center;
+}
+footer ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 2rem;
+  font-size: 16px;
+}
+footer ul li a {
+  color: #ffffff;
+}
+footer ul li a:hover {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=main.css.map */

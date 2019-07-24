@@ -10,4 +10,5 @@ set FLASK_ENV=development
 flask run
 #added typescript cmd to compile on any changes
  tsc .\main.ts --outFile ..\satic\js --watch
-
+## npm install -g sass
+ sass --watch .\main.sass ..\css\main.css
