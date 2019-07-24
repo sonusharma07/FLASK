@@ -18,13 +18,25 @@
         {% block content %}
         {% endblock %}
         <footer>
-            <ul>
-                <li><a href="/about">About Us</a></li>
-                <li><a href="/terms">Terms of Use</a></li>
-                <li><a href="/contact">Contact Us</a></li>
-                <li><a href="/privacy">Contact Us</a></li>
-            </ul>
-            <span class="copyright">&copy; 2019 - You are in better hands</span>   
+
+            <div class="flex-container">
+                <div class="item">
+                    <a href="/about">About Us</a>
+                </div>
+                <div class="item">
+                    <a href="/terms">Terms of Use</a>  
+                </div>
+                <div class="item">
+                    <a href="/contact">Contact Us</a>    
+                </div>
+                <div class="item">
+                    <a href="/privacy">Contact Us</a>        
+                </div>
+            </div>
+            <div class="copyright">
+                    <span class="copyright">&copy; 2019 - You are in better hands</span>
+            </div>
+               
         </footer>
         <script src="../static/js/main.js"></script>
     </body>

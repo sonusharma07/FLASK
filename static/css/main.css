@@ -21,26 +21,21 @@ footer {
   color: #fff;
   position: relative;
 }
-footer span {
-  position: absolute;
-  bottom: 0.5rem;
-  width: 100%;
+footer div.flex-container {
+  display: flex;
+  padding: 2rem;
   text-align: center;
 }
-footer ul {
-  text-align: center;
+footer div.flex-container a {
+  color: #fff;
 }
-footer ul li {
-  list-style-type: none;
-  display: inline-block;
-  margin-right: 2rem;
-  font-size: 16px;
+footer div.copyright {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
 }
-footer ul li a {
-  color: #ffffff;
-}
-footer ul li a:hover {
-  text-decoration: none;
+footer div.item {
+  flex-grow: 1;
 }
 
 /*# sourceMappingURL=main.css.map */
