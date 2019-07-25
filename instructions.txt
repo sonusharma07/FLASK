@@ -12,3 +12,5 @@ flask run
  tsc .\main.ts --outFile ..\satic\js --watch
 ## npm install -g sass
  sass --watch .\main.sass ..\css\main.css
+#learn react handson :
+https://codesandbox.io/

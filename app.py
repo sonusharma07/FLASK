@@ -3,6 +3,21 @@ from flask import Flask , render_template
 
 app = Flask(__name__)
 
+data = [
+    {
+        "title": "Java",
+        "bio": "Java is Object Oriented programming language"
+    },
+    {
+        "title": "Python",
+        "bio": "Python is scripting programming language"
+    },
+    {
+        "title": "JavaScript",
+        "bio": "JavaSript is Web Server programming language"
+    }
+]
+
 @app.route('/')
 def hello_world():
     title='Learn Flask'
@@ -32,3 +47,10 @@ def terms():
 def privacy():
     title = 'Privacy policy'
     return render_template('privacy.html' , title=title)
+
+@app.route('/lang/<name>')
+def lang(name):
+    title = name
+    lang = next(langinfo for langinfo in data if langinfo['title'].lower() == name.lower())
+    print(lang)
+    return render_template('lang.html',title=title,lang=lang )
